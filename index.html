@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Coach</title>
+<meta name="description" content="Focus Coach plans focus time between your meetings and pauses distracting apps during it — on your iPhone, with no account.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c22;
+    --muted: #5b5b66;
+    --brand: #C2410C;
+    --card: #f5f6fa;
+    --border: #e5e6ec;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1014;
+      --fg: #e9e9ee;
+      --muted: #a2a2ad;
+      --brand: #FB923C;
+      --card: #191a20;
+      --border: #2a2b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: var(--maxw); margin: 0 auto; padding: 56px 0 80px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: grid; place-items: center; margin-bottom: 22px;
+    background: linear-gradient(135deg, #F59E0B 0%, #C2410C 52%, #7C2D12 100%);
+  }
+  .mark span { width: 10px; height: 10px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 6px rgba(255,255,255,.28), 0 0 0 12px rgba(255,255,255,.14); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--brand); }
+  strong { font-weight: 600; }
+  .tldr {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 8px;
+  }
+  .tldr p { margin: 0; }
+  .note {
+    color: var(--muted); font-size: 14px; border-top: 1px solid var(--border);
+    margin-top: 48px; padding-top: 20px;
+  }
+  code { background: var(--card); padding: 1px 6px; border-radius: 6px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span></span></div>
+  <h1>Focus Coach</h1>
+  <p class="updated">Focus time between your meetings — protected by itself.</p>
+  <div class="tldr">
+    <p>Focus Coach reads your calendar on your iPhone, plans focus blocks in the gaps between your meetings, and pauses the apps you choose during them. No account. Nothing leaves your phone.</p>
+  </div>
+  <h2>Links</h2>
+  <ul>
+    <li><a href="support">Support</a></li>
+    <li><a href="privacy">Privacy policy</a></li>
+  </ul>
+</main>
+</body>
+</html>

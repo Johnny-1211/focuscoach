@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Coach — Support</title>
+<meta name="description" content="Help and contact for Focus Coach, the iPhone app that protects focus time between your meetings.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c22;
+    --muted: #5b5b66;
+    --brand: #C2410C;
+    --card: #f5f6fa;
+    --border: #e5e6ec;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1014;
+      --fg: #e9e9ee;
+      --muted: #a2a2ad;
+      --brand: #FB923C;
+      --card: #191a20;
+      --border: #2a2b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: var(--maxw); margin: 0 auto; padding: 56px 0 80px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: grid; place-items: center; margin-bottom: 22px;
+    background: linear-gradient(135deg, #F59E0B 0%, #C2410C 52%, #7C2D12 100%);
+  }
+  .mark span { width: 10px; height: 10px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 6px rgba(255,255,255,.28), 0 0 0 12px rgba(255,255,255,.14); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--brand); }
+  strong { font-weight: 600; }
+  .tldr {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 8px;
+  }
+  .tldr p { margin: 0; }
+  .note {
+    color: var(--muted); font-size: 14px; border-top: 1px solid var(--border);
+    margin-top: 48px; padding-top: 20px;
+  }
+  code { background: var(--card); padding: 1px 6px; border-radius: 6px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span></span></div>
+  <h1>Focus Coach — Support</h1>
+  <p class="updated">Questions, bugs or ideas: <a href="mailto:johnnyjt1211@gmail.com">johnnyjt1211@gmail.com</a>. I read everything and usually reply within two working days.</p>
+
+  <h2>Common questions</h2>
+
+  <p><strong>Apps didn't pause when a focus block started.</strong> Check that Screen Time access is still on (Settings → Screen Time → Apps with Screen Time Access → Focus Coach), and that you picked apps or categories to pause in the Focus tab. Focus blocks run by themselves, so the app doesn't need to be open.</p>
+
+  <p><strong>A block landed on a meeting.</strong> Focus Coach adjusts a plan when a meeting lands on a block that hasn't started yet: it shortens or moves the block and tells you. A block already in progress is left alone — tap Skip if you need your apps back.</p>
+
+  <p><strong>I need an app during a block.</strong> On the shield, tap "I need it" twice for a 5-minute break. You get two per block, and the shield comes back on its own.</p>
+
+  <p><strong>"Plan every weekday" didn't set today's plan.</strong> iOS decides when background refresh runs. Opening Focus Coach always sets the day's plan if it hasn't been set yet.</p>
+
+  <p><strong>Remove the "Focus time" events from my calendar.</strong> Cancel the plan in the Focus tab and Focus Coach removes the events it added. Turn off "Block this time on my calendar" to stop adding them.</p>
+
+  <h2>Subscription</h2>
+  <p>Focus Coach Pro is billed by Apple. To cancel or change plans: Settings → your name → Subscriptions → Focus Coach. For refunds, use <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+  <h2>Privacy</h2>
+  <p>Everything runs on your iPhone, with no account and no servers. Read the <a href="privacy">privacy policy</a>.</p>
+</main>
+</body>
+</html>

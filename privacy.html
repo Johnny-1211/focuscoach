@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Focus Coach — Privacy Policy</title>
+<meta name="description" content="Focus Coach performs all analysis on your device. It collects no data, has no servers, and never transmits your Screen Time or calendar information.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c22;
+    --muted: #5b5b66;
+    --brand: #C2410C;
+    --card: #f5f6fa;
+    --border: #e5e6ec;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1014;
+      --fg: #e9e9ee;
+      --muted: #a2a2ad;
+      --brand: #FB923C;
+      --card: #191a20;
+      --border: #2a2b33;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: var(--maxw); margin: 0 auto; padding: 56px 0 80px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: grid; place-items: center; margin-bottom: 22px;
+    background: linear-gradient(135deg, #F59E0B 0%, #C2410C 52%, #7C2D12 100%);
+  }
+  .mark span { width: 10px; height: 10px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 6px rgba(255,255,255,.28), 0 0 0 12px rgba(255,255,255,.14); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--brand); }
+  strong { font-weight: 600; }
+  .tldr {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 8px;
+  }
+  .tldr p { margin: 0; }
+  .note {
+    color: var(--muted); font-size: 14px; border-top: 1px solid var(--border);
+    margin-top: 48px; padding-top: 20px;
+  }
+  code { background: var(--card); padding: 1px 6px; border-radius: 6px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><span></span></div>
+  <h1>Focus Coach — Privacy Policy</h1>
+  <p class="updated">Last updated: October 8, 2026</p>
+
+  <div class="tldr">
+    <p><strong>The short version:</strong> Focus Coach does all of its analysis directly on your iPhone. It has no servers and no user accounts. It does not collect your data, does not track you, and never transmits your Screen Time or calendar information anywhere. Your insights are yours alone.</p>
+  </div>
+
+  <h2>Who this applies to</h2>
+  <p>This policy covers the Focus Coach iOS app ("Focus Coach", "the app", "we", "us"). Focus Coach is a personal focus tool for adults: it plans focus time between their meetings and pauses the apps they choose during it. It is not a parental-control or monitoring product.</p>
+
+  <h2>Information we collect</h2>
+  <p><strong>None.</strong> Focus Coach does not collect, store on a server, or transmit any personal information. We have no analytics, no advertising, no tracking, no third-party SDKs, and no user accounts. Because there is no server, there is nothing for us to see, sell, or lose.</p>
+
+  <h2>Data the app reads on your device</h2>
+  <p>To do its job, the app reads two kinds of information locally, only after you grant permission, and processes all of it on your device:</p>
+  <ul>
+    <li><strong>Screen Time activity</strong> (Apple's Family Controls / Device Activity framework). The app reads how you use your apps to build your weekly attention summary. This aggregation happens inside a sandboxed on-device extension that, by system design, cannot send data off the device or to us.</li>
+    <li><strong>Calendar</strong> (Apple's EventKit framework), only if you choose to connect it. The app reads your events to find focus time between your meetings, to keep a Focus Plan up to date when your calendar changes, and to show how meeting load relates to your focus. It keeps only a title-free summary (counts and durations by hour) on your device — it does not store event titles, attendees, notes, or locations, and never uploads any of it. If you turn on "Block this time on my calendar" for a Focus Plan, the app adds "Focus time" events to your calendar for the blocks you chose, and removes them if you cancel the plan.</li>
+  </ul>
+  <p>Focus Plan may also run briefly in the background (iOS background refresh) to set up a weekday's plan or adjust it around new meetings. That work happens on your device in the same way, and any notification it shows (for example, a heads-up before a focus block) is a local notification created on your iPhone — no push service is involved.</p>
+  <p>Any on-device coaching text is generated locally (using Apple's on-device model where available, or a built-in deterministic fallback otherwise). No prompt or result is sent to any server.</p>
+
+  <h2>Where your data lives</h2>
+  <p>Everything the app produces — your weekly summary, the title-free meeting profile, your Focus Plan, your settings, and a history of focus blocks, sessions and breaks (start time and length only, kept for 120 days to show your weekly recap) — is stored locally on your device (in the app's private storage and its App Group container). It is never copied to the cloud by us and is not synced to other devices.</p>
+
+  <h2>Subscriptions and payments</h2>
+  <p>Focus Coach Pro is an auto-renewable subscription sold through Apple's App Store using StoreKit. Apple processes the purchase and manages billing. The app never sees or stores your payment details. Any information related to the transaction is handled by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. You can manage or cancel your subscription anytime in the App Store account settings on your device.</p>
+
+  <h2>Beta testing through TestFlight</h2>
+  <p>If you test a pre-release version through Apple's TestFlight, Apple may share crash reports, basic usage information and any feedback you choose to send with us, under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a> and the TestFlight terms. This comes from TestFlight itself, not from Focus Coach, and does not include your Screen Time or calendar data.</p>
+
+  <h2>Sharing with third parties</h2>
+  <p>We do not share your data with third parties, because we never receive it in the first place. The only third party involved is Apple, solely to process App Store subscriptions as described above.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Because your data lives only on your device, you are in full control of it. Deleting the app removes all of its local data. Revoking Screen Time or Calendar access in the iOS Settings app stops any further reading immediately. We hold no copy of your data, so there is nothing for us to delete on your behalf.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Focus Coach is intended for adults (self-monitoring, using Apple's individual authorization). It is not directed to children and does not knowingly collect information from anyone — indeed, it does not collect information from any user.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and revise the "Last updated" date above. Material changes will be reflected here before they take effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy in Focus Coach? Contact us at <a href="mailto:johnnyjt1211@gmail.com">johnnyjt1211@gmail.com</a>.</p>
+
+  <p class="note">This document is a plain-language privacy policy for the Focus Coach iOS app. It reflects the app's on-device architecture as of the date above. It is not legal advice; if you operate in a jurisdiction with specific disclosure requirements, review it against those rules before publishing.</p>
+</main>
+</body>
+</html>
